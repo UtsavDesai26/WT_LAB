@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: arial;
+}
+
+.main {
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 20%;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+.image img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.des {
+    padding: 3px;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid rgb(226, 160, 17);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: rgb(22, 24, 20);
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 936px) {
+    .card{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width : 620px) and  (max-width : 936px) {
+    .card{
+        width: 100%;
+    }
+    .des{
+        padding: 5px;
+        font-size: 20px;
+    }
+    .title{
+        padding: 10px;
+        font-size: 40px;
+    }
+    button{
+        margin: 20px;
+        padding: 5px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width : 320px) and  (max-width : 620px) {
+    .card{
+        width: 100%;
+    }
+    .des{
+        padding: 5px;
+        font-size: 10px;
+    }
+    .title{
+        padding: 5px;
+        font-size: 40px;
+    }
+    button{
+        margin: 10px;
+        padding: 5px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width : 0px) and (max-width : 320px){
+    .card{
+        width: 100%;
+    }
+    .des{
+        padding: 5px;
+        font-size: 5px;
+    }
+    .title{
+        padding: 5px;
+        font-size: 20px;
+    }
+    button{
+        margin: 5px;
+        padding: 5px;
+        font-size: 5px;
+    }
+}
